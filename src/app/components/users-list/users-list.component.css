@@ -1,0 +1,25 @@
+.list {
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
+}
+
+button {
+  background-color: rgb(235, 53, 53);
+  color: white;
+}
+
+h1{
+  color: black;
+}
+
+li{
+  color: black;
+  font-size: large;
+  background-color: rgb(250, 250, 250);
+}
+
+p{
+  color: black;
+  font-size: x-large;
+}

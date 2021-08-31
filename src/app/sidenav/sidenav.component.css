@@ -1,0 +1,47 @@
+mat-divider {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgba(255, 224, 224, 0.527);
+}
+
+
+.name {
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.operation {
+    font-weight: normal;
+    margin-left: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+mat-icon{
+  color: white;
+}
+
+.designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgrey;
+}
+
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    padding-bottom: 10px;
+
+}
+
+mat-icon {
+    margin-right: 8px;
+}
+
+
+mat-list-item{
+    margin-bottom: 10px;
+}

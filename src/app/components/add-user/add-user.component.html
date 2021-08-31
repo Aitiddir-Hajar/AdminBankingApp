@@ -1,0 +1,49 @@
+<div class="submit-form">
+  <div *ngIf="!submitted">
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="firstName"><span class="title">First Name<span style="color:red;">*</span></span></label>
+            <input type="text" class="form-control" id="firstname" required [(ngModel)]="user.firstname" name="firstname"/>
+        </div>
+        <div class="form-group col">
+            <label for="lastName"><span class="title">Last Name<span style="color:red;">*</span></span></label>
+            <input class="form-control" id="lastname" required [(ngModel)]="user.lastname" name="lastname"/>
+        </div>
+    </div>
+    
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="phonenumber"><span class="title">Phone Number</span></label>
+            <input class="form-control" id="phonenumber" required [(ngModel)]="user.phonenumber" name="phonenumber"/>
+        </div>
+        <div class="form-group col">
+            <label for="adress"><span class="title">Adress</span></label>
+            <input class="form-control" id="adress" required [(ngModel)]="user.adress" name="adress"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="cardnumber"><span class="title">Card Number<span style="color:red;">*</span></span></label>
+            <input class="form-control" id="cardnumber" required [(ngModel)]="user.cardnumber" name="cardnumber"/>
+        </div>
+        <div class="form-group col">
+            <label for="email"><span class="title">Email<span style="color:red;">*</span></span></label>
+            <input class="form-control" id="email" required [(ngModel)]="user.email" name="email"/>
+        </div>
+    </div>
+    <div class="form-group">
+      <label for="password"><span class="title">Password<span style="color:red;">*</span></span></label>
+      <input type="password" class="form-control" id="password" required [(ngModel)]="user.password" name="password"/>
+    </div>
+
+    <button (click)="saveUser()" class="btn btn-success">Submit</button>
+  </div>
+
+  <div *ngIf="submitted">
+    <h4>User added successfully!</h4>
+    <button class="btn btn-success" (click)="newUser()">Add</button>
+  </div>
+</div>
+
+
+

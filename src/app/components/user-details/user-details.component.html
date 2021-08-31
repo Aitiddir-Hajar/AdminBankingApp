@@ -1,0 +1,80 @@
+<div *ngIf="currentUser" class="edit-form">
+  <h4>User</h4>
+  <form>
+    <div class="form-row">
+      <div class="form-group col">
+        <label for="firstname">First Name</label>
+        <input type="text" class="form-control" id="firstname" [(ngModel)]="currentUser.firstname" name="firstname"/>
+      </div>
+      <div class="form-group col">
+        <label for="lastname">Last Name</label>
+        <input type="text" class="form-control" id="lastname" [(ngModel)]="currentUser.lastname" name="lastname"/>
+      </div>
+    </div>
+    <!--<div class="form-row">
+      <div class="form-group col">
+        <label for="cardnumber">Card Number</label>
+        <input type="text" class="form-control" id="cardnumber" [(ngModel)]="currentUser.cardnumber" name="cardnumber"/>
+      </div>
+      <div class="form-group col">
+        <label for="phonenumber">Phone Number</label>
+        <input type="text" class="form-control" id="phonenumber" [(ngModel)]="currentUser.phonenumber" name="phonenumber"/>
+      </div>
+    </div>-->
+    <div class="form-row">
+      <div class="form-group col">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" [(ngModel)]="currentUser.email" name="email"/>
+      </div>
+      <!--<div class="form-group col">
+        <label for="adress">Adress</label>
+        <input type="text" class="form-control" id="adress" [(ngModel)]="currentUser.adress" name="adress"/>
+      </div>-->
+    </div>
+
+    <div class="form-group">
+      <span class="sts">Status:</span>
+      <span class="active">{{ currentUser.activated ? "Activated" : "Blocked" }} </span>
+    </div>
+  </form>
+  <div class="example-button-row">
+    <button
+      id="block"
+      class="badge badge-primary mr-2"
+      *ngIf="currentUser.activated"
+      mat-raised-button color="basic"
+      (click)="updateActivated(false)"
+    >
+      <mat-icon>credit_card_off</mat-icon>
+      Block
+    </button>
+    <button
+      id="unblock"
+      *ngIf="!currentUser.activated"
+      class="badge badge-primary mr-2"
+      mat-raised-button color="basic"
+      (click)="updateActivated(true)"
+    >
+    <mat-icon>credit_score</mat-icon>
+      Unblock
+    </button>
+
+    <button id="delete" class="badge badge-danger mr-2" mat-raised-button color="basic" (click)="deleteUser()">
+      <mat-icon>person_remove</mat-icon>
+      Delete
+    </button>
+
+    <button id="update" type="submit" class="badge badge-success" mat-raised-button color="basic" (click)="updateUser()">
+      <mat-icon>how_to_reg</mat-icon>
+      Update
+    </button>
+  </div>
+    <p class="msg">{{ message }}</p>
+  
+</div>
+
+
+<div *ngIf="!currentUser">
+  <br />
+  <p>Cannot access this User...</p>
+</div>

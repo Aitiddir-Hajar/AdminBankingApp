@@ -1,0 +1,53 @@
+.container h2 {
+  text-align: center;
+  margin: 25px auto;
+}
+
+.hpsimage {
+  border-radius: 1px;
+  padding: 1px;
+  width: 110px;
+}
+
+.example-container {
+  width: 90em;
+  height: 40em;
+
+}
+
+mat-toolbar {
+  background: #1677d8;
+  color: white;
+}
+
+
+mat-sidenav{
+  margin: 14px;
+  width: 250px;
+  border-right: none;
+  background: #616363;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  
+}
+
+.content {
+  height: calc(100vh - 98px);
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: lightgray;
+}
+
+h1{
+  color: hsla(150, 1%, 62%, 0.993);
+}
+

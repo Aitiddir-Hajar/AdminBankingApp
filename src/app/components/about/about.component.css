@@ -1,0 +1,40 @@
+p{
+    color: black;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-weight: 50px;
+    font-size: 30px;
+}
+
+#bt{
+    background-color: rgb(11, 57, 185);
+    color: white;
+}
+
+#bt2{
+    background-color: rgb(102, 203, 233);
+    color: white;
+}
+
+#bt3{
+    background-color: rgb(235, 53, 53);
+    color: white;
+}
+
+button{
+    margin:10px;
+    margin-top: 50px;
+
+}
+
+
+img{
+    width: 30px;
+}

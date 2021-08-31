@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+    <img src="../assets/hps-removebg-preview.png" class="hpsimage">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" >Home</a>
+        <a class="nav-item nav-link" routerLink="/login">Logout</a>
+    </div>
+  </nav>
+  
+  <mat-sidenav-container>
+    <mat-sidenav class="mat-elevation-z8">
+        <app-sidenav></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+            <div class="content mat-elevation-z8">
+                <router-outlet></router-outlet>
+            </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

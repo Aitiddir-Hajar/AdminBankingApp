@@ -1,0 +1,60 @@
+.edit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+label{
+  font-size: 16px;
+  color: rgb(99, 97, 97);
+}
+
+strong{
+  font-size: 16px;
+  color: black;
+}
+
+h4{
+  color: black;
+  font-size: large;
+}
+
+input{
+  color: black;
+}
+
+.sts{
+  color: black;
+  font-size: large;
+}
+
+.active{
+  font-size: 16px;
+  margin-left: 5px;
+  color: rgb(99, 97, 97);
+}
+
+#update{
+  background-color: rgb(78, 201, 29);
+  color: white;
+  margin-top: 5px;
+}
+
+#delete{
+  background-color: rgb(235, 53, 53);
+  color: white;
+}
+
+#unblock{
+  background-color: rgb(27, 136, 187);
+  color: white;
+}
+
+#block{
+  background-color: red;
+  color: white;
+}
+
+.msg{
+  color: black;
+  font-size: large;
+}

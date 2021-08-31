@@ -1,0 +1,32 @@
+.submit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.txt{
+  color: red;
+}
+
+.title{
+  font-size: 16px;
+  color: rgb(99, 97, 97);
+}
+
+h1{
+  color: black;
+}
+
+#bt{
+  background-color: rgb(78, 201, 29);
+  color: white;
+}
+
+h4{
+  color: black;
+  font-size: large;
+}
+
+button{
+  background-color: rgb(78, 201, 29);
+  color: white;
+}
